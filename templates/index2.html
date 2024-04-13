@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <h1>ENTER THE INPUT VALUE</h1>
+    <form action="/analyze" method="post"> {% csrf_token %}
+        <textarea name="text" id="" cols="30" rows="10" spellcheck="false" style="width: 1405px; height: 237px;"></textarea>
+        <h3><input type="checkbox" name="ip" >Remove Punctuation</h3> <br>
+        <h3><input type="checkbox" name="To_uppercase" >To Uppercase</h3> <br>
+        <h3><input type="checkbox" name="To_lowercase" id="">To Lowercase</h3>
+        <h3><input type="checkbox" name="newlineremover" id="">newlineremover</h3>
+        <h3><input type="checkbox" name="spaceremover" id="">spaceremover</h3>
+        <h3><input type="checkbox" name="charcount" id="">charcount</h3>
+        <button type="submit">Provide output</button>
+    </form>
+    
+</body>
+</html>
